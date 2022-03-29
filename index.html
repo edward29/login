@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6cbe1b72c6.js" crossorigin="anonymous"></script>
+
+    <title>Sample form</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Login</h2>
+        <form action="home.html" class="myForm">
+            <div class="info">
+                <div class="user-el">
+                    <span class="rightMe"><i class="fa-solid fa-user"></i></span>
+                    <input type="text" id="username" placeholder="Type Your Username" autofocus required>
+                </div>
+        <br><br>  
+                <div class="password-el">
+                    <span class="rightMe"><i class="fa-solid fa-lock"></i></span>
+                    <input type="password" id="pass" placeholder="Type Your Password" required>
+                    <span>
+                        <i class="fa-solid fa-eye" aria-hidden="true" onclick="showPass()" id="eye"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="forget">
+                <a href="#">Forgot Password</a>
+            </div>
+            <br>
+            <div class="btn_submit">
+                <button type="submit" id="btn-submit">submit</button>
+            </div>
+            <br>
+            <div class="signUp">
+                <p>Not Register?<a href="#">Create new account</a></p>
+            </div>
+        </form>
+    </div>
+    <div class="alert-container">
+        <div class="alert-box">
+            <div class="alert-title">Warning</div>
+            <div class="alert-btn">&times;</div>
+            <div class="alert-msg">Check username or password</div>
+        </div>
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
